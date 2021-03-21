@@ -48,7 +48,7 @@ linkedList_t *linkedListNew(real data)
  *              empty head.                                                   *
  ******************************************************************************
  * parameters:                                                                *
- *      linkedList_t   list  : required full linked list.                     * 
+ *      linkedList_t   list  : required full linked list.                     *
  *                                                                            *
  * output:                                                                    *
  *      void                 : required empty linked list.                    *
@@ -125,7 +125,7 @@ void linkedListAddEnd(linkedList_t *list, real data)
  *      natural        index : unsigned int index value.                      *
  *                                                                            *
  * output:                                                                    *
- *      void                 : a new node at the desired position in the list.*                                          *
+ *      void                 : a new node at the desired position in the list.*
  ******************************************************************************/
 void linkedListAddByIndex(linkedList_t **list, real data, natural index)
 {
@@ -164,7 +164,7 @@ void linkedListAddByIndex(linkedList_t **list, real data, natural index)
 /******************************************************************************
  * linkedListRemoveLast                                                       *
  ******************************************************************************
- * description: removes the last node of the linked list.                     *                                                *
+ * description: removes the last node of the linked list.                     *
  ******************************************************************************
  * parameters:                                                                *
  *      linkedList_t  *list  : receives the list (e.g, list).                 *
@@ -234,8 +234,8 @@ void linkedListRemoveFirst(linkedList_t **list)
  *      natural         index : desired position in the list                  *
  *                                                                            *
  * output:                                                                    *
- *      void                  : a new node is added at the end of the linked  *
- *                             list.                                          *
+ *      void                  : a list without the node at the desired        *
+ *                              position                                      *
  ******************************************************************************/
 void linkedListRemoveByIndex(linkedList_t **list, natural index)
 {
@@ -273,8 +273,7 @@ void linkedListRemoveByIndex(linkedList_t **list, natural index)
  *      natural         index : desired position in the list                  *
  *                                                                            *
  * output:                                                                    *
- *      void                  : a new node is added at the end of the linked  *
- *                             list.                                          *
+ *      void                  : data at the desired postion in the linked list*
  ******************************************************************************/
 real linkedListGet(linkedList_t *list, natural index)
 {
@@ -310,8 +309,8 @@ real linkedListGet(linkedList_t *list, natural index)
  *      natural         index : desired position in the list                  *
  *                                                                            *
  * output:                                                                    *
- *      void                  : a new node is added at the end of the linked  *
- *                             list.                                          *
+ *      void                  : a new value is set at the desired position    *
+ *                              of the linked list.                           *
  ******************************************************************************/
 void linkedListSet(linkedList_t *list, real data, natural index)
 {
